@@ -14,6 +14,7 @@ module.exports = {
         compress: true,
         port: 3001
     },
+    devtool: 'inline-source-map',
     plugins: [
         new HtmlWebpackPlugin(
             {
@@ -26,6 +27,11 @@ module.exports = {
     ],
     module: {
         rules: [
+            {
+                test: /\.tsx?$/,
+                exclude: path.resolve(__dirname, 'node_modules'),
+                loader: 'ts-loader'
+            },
             {
                 test: /\.jsx?$/,
                 exclude: path.resolve(__dirname, 'node_modules'),
@@ -49,6 +55,13 @@ module.exports = {
                     'sass-loader'
                 ]
             }
+        ]
+    },
+    resolve: {
+        extensions: [
+            '.tsx',
+            '.ts',
+            '.js'
         ]
     }
 }
