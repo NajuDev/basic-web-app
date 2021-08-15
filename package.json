@@ -10,7 +10,7 @@
   "author": "Nazeerudeen Ruhomutally",
   "license": "MIT",
   "devDependencies": {
-    "@babel/cli": "^7.5.5",
+    "@babel/cli": "^7.14.8",
     "@babel/core": "^7.5.5",
     "@babel/plugin-proposal-object-rest-spread": "^7.5.5",
     "@babel/plugin-transform-spread": "^7.2.2",
@@ -28,7 +28,7 @@
     "typescript": "^3.6.2",
     "webpack": "^4.39.3",
     "webpack-cli": "^3.3.7",
-    "webpack-dev-server": "^3.8.0"
+    "webpack-dev-server": "^3.11.2"
   },
   "browserslist": [
     "last 2 Chrome major versions",
